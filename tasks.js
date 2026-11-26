@@ -18,11 +18,11 @@ function addTask(tasks, title) {
   if (clean === "") {
     return tasks;
   }
-  tasks.push({ title: clean, done: true });
+  tasks.push({ title: clean, done: false });
   return tasks;
 }
 
-// Inverse le statut (terminée / à faire) de la tâche numéro index.
+// Inverse le statut (terminée / à faire) de la tâche numéro index.npm test
 function toggleTask(tasks, index) {
   tasks[index].done = !tasks[index].done;
   return tasks;
