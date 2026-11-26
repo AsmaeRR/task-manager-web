@@ -22,7 +22,7 @@ function addTask(tasks, title) {
   return tasks;
 }
 
-// Inverse le statut (terminée / à faire) de la tâche numéro index.
+// Inverse le statut (terminée / à faire) de la tâche numéro index.npm test
 function toggleTask(tasks, index) {
   tasks[index].done = !tasks[index].done;
   return tasks;
